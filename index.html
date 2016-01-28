@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script>
-    x = 0;
-    $(document).ready(function(){
-        $("div").scroll(function(){
-            $("span").text( x+= 1);
-        });
-    });
-  </script>
+
+
   <title></title>
 </head>
 <body>
@@ -22,5 +15,16 @@
   </div>
 
   <p>Scrolled <span>0</span> times.</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src = "application.js"></script>
+   <script>
+    x = 0;
+    $(document).ready(function(){
+        $("div").scroll(function(){
+            $("span").text( x+= 1);
+        });
+    });
+  </script>
 </body>
 </html>
+<!-- way to deal with asynchronous code is passing callbacks as an argument to the function -->
