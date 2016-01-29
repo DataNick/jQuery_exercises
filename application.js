@@ -20,9 +20,9 @@ $(document).ready(function(){
 
   //select node of out DOM to serve as reference point to put price node before
   $('button').on('click', function(){
-    (price).prependTo($("#intro"));
-    $('button').remove();
-
+    $(this).after(price);
+    $(this).remove();
+    //target all buttons from DOM
   });
 
 
@@ -42,3 +42,39 @@ $(document).ready(function(){
 //Interaction]
 //$(document).ready(<event handler function>);
 //create a function
+
+//data- tag attribute stores custom data private to page
+//embed custom data attributes on all html attributes
+//add to any element to provide additional information about objects on page
+//jQuery Object methods getter -> .data(<element>) setter -> .data(<name>, <value>)
+
+//fetching div with filters id
+//use event delegation to listen for click events for onsale-filter class
+//$('#filters').on('click', '.onsale-filter', function() {
+  //$('highlighted').removeClass('.highlighted');
+//find all vacations on sale
+//$('.vacation').filter('.onsale') -> finds element with a class of .vacation and .onsale
+//add a class to these vacations to highlight them
+//$('.vacation').filter('.onsale').addClass('highlighted');
+
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
