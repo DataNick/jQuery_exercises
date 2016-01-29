@@ -51,6 +51,7 @@ $(document).ready(function(){
 //fetching div with filters id
 //use event delegation to listen for click events for onsale-filter class
 //$('#filters').on('click', '.onsale-filter', function() {
+  //when a button is clicked, look for any highlighted classes
   //$('highlighted').removeClass('.highlighted');
 //find all vacations on sale
 //$('.vacation').filter('.onsale') -> finds element with a class of .vacation and .onsale
@@ -58,6 +59,17 @@ $(document).ready(function(){
 //$('.vacation').filter('.onsale').addClass('highlighted');
 
 //});
+// $(document).ready(function() {
+//   $('#nights').on('keyup', function() {
+//     Get the number of nights from the current element and convert it to a number.
+//     var nights = +$(this).val();
+//     Traverse to the closest .tour and get the daily-price.
+//     var dailyPrice = +$(this).closest('.tour').data('daily-price');
+//     Set the #total to the product of the number of nights and the daily price.
+//     $('#total').text(nights * dailyPrice);
+//     $('#nights-count').text($(this).val());
+//   });
+// });
 
 
 
